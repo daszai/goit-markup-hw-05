@@ -17,10 +17,14 @@ ul,
 ol {
   margin: 0;
 }
-svg {
+svg,
+img {
   display: block;
 }
 
+.fix3 {
+  margin-top: 30px;
+}
 .sad {
   display: flex;
   gap: 0px;
@@ -31,7 +35,6 @@ svg {
   display: flex;
   margin: 0;
   align-items: center;
-  padding-bottom: 25px;
   padding-top: 24px;
 }
 .fix {
@@ -68,6 +71,9 @@ ol {
 .link {
   color: inherit;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button {
   color: var(--colorTextMain);
@@ -75,6 +81,9 @@ ol {
   text-decoration: none;
   background-color: white;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -255,8 +264,10 @@ ol {
   height: 38px;
   width: 121px;
   background-color: #f5f4fa;
-
   border-radius: 4px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item34:hover,
@@ -304,6 +315,11 @@ ol {
   margin-right: 10px;
   fill: #afb1b8;
   cursor: pointer;
+  border-radius: 50%;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pic3:last-child {
   margin-right: 0px;
@@ -311,7 +327,7 @@ ol {
 
 .pic3:focus,
 .pic3:hover {
-  background: #2196f3;
+  background-color: #2196f3;
   border-radius: 50%;
   fill: #ffffff;
 }
@@ -328,10 +344,13 @@ ol {
   gap: 10px;
   align-items: center;
   fill: #757575;
-
   text-decoration: none;
   color: var(--colorTextMainG);
   font-size: 14px;
+
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .aaa:hover,
@@ -345,16 +364,24 @@ ol {
   gap: 30px;
 }
 .item10 {
-  border: 1px solid #afb1b8;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   cursor: pointer;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item10 :hover,
-.item10 :focus {
+.item10:hover,
+.item10:focus {
   fill: #2196f3;
+
   border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .temp {
   display: flex;
@@ -366,13 +393,16 @@ ol {
   background: #2196f3;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pic4:focus,
 .pic4:hover {
   background: #2196f3;
   border-radius: 50%;
-  fill: #ffffff;
 }
 .aaaaa {
   font-family: Roboto;
@@ -398,6 +428,10 @@ ol {
   width: 370px;
   border: 1px solid #eeeeee;
   cursor: pointer;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-items-2 {
   color: #ffffff99;
@@ -414,4 +448,37 @@ ol {
 }
 .fix2 {
   margin-bottom: 16px;
+}
+
+.item100 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+  color: white;
+  text-transform: uppercase;
+  width: 370px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.relative_o {
+  position: relative;
+}
+
+.now::after {
+  display: block;
+  border: 2px solid #2196f3;
+  content: "";
+  margin-top: 28px;
+  border-radius: 2px;
+}
+
+.now {
+  color: #2196f3;
 }

@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .aaa:hover {
-        background-color: aqua !important;
-      }
-      .aaa {
-        width: 100px;
-        height: 100px;
-
-        background-color: red;
-
-        transition-property: background-color;
-        transition-duration: 1s;
-      }
       .bbb {
         background-color: yellow;
+        width: 1000px;
+        height: 1000px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 20px;
+      }
+      .a {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+      }
+      .posi {
+      }
+      .posi::after {
+        content: "SIEMA";
+        border: 1px solid red;
       }
     </style>
     <title>Document</title>
   </head>
   <body>
-    <div class="aaa bbb"></div>
+    <div class="bbb">
+      <div class="a posi">
+        fs
+        <div>blok</div>
+      </div>
+      <div class="a">df</div>
+      <div class="a">f</div>
+      <div class="a">dfa</div>
+    </div>
   </body>
 </html>

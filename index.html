@@ -24,7 +24,9 @@
       >
       <nav>
         <ul class="nav1">
-          <li><a href=".#" class="link navigation now">Agencja</a></li>
+          <li class="rela">
+            <a href=".#" class="link navigation now">Agencja</a>
+          </li>
           <li>
             <a href="./portfolio.html" class="link navigation">Portfolio</a>
           </li>
@@ -51,6 +53,17 @@
       </ul>
     </header>
     <main>
+      <section>
+        <div class="modal is-hidden" data-modal>
+          <div class="box">
+            <div class="box2" data-modal-close>
+              <svg width="11" height="11" viewBox="0 0 11 11">
+                <use href="./images/icons.svg#vector"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section1 container">
         <div class="new">
           <h1 class="heading-1">
@@ -58,7 +71,7 @@
             DLA WASZEGO BIZNESU
           </h1>
 
-          <button type="button" class="button buton-center">
+          <button data-modal-open type="button" class="button buton-center">
             Zamów usługę
           </button>
         </div>
@@ -354,5 +367,6 @@
         </address>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

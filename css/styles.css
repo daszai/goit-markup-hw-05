@@ -524,8 +524,8 @@ ol {
   justify-content: center;
   z-index: 1;
 
-  transition-property: transform opacity;
-  transition-duration: 0.5s;
+  transition-property: transform, opacity, visibility;
+  transition-duration: 2s;
   transform: scale(1);
 }
 .box {
@@ -550,7 +550,6 @@ ol {
   pointer-events: none;
   opacity: 0;
 }
-
 @keyframes animtion {
   0% {
     transform: scale(0);
